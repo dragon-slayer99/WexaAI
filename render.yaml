@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: backend
+    env: docker
+    repo: .
+    dockerfilePath: backend/Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: CognoDB_URI
+        value: "${COGNO_DB_URI}"
+      - key: CognoDB_USERNAME
+        value: "${COGNO_DB_USERNAME}"
+      - key: CognoDB_PASSWORD
+        value: "${COGNO_DB_PASSWORD}"
+    autoDeploy: true
+
+  - type: static
+    name: frontend
+    env: static
+    repo: .
+    staticPublishPath: frontend/dist
+    buildCommand: |
+      cd frontend && npm ci && npm run build
+    autoDeploy: true

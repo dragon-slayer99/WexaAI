@@ -1,0 +1,137 @@
+/* Pathfinder.css */
+
+.pathfinder-page {
+  background-color: #000000; /* surface-dark */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: 'NouvelR', 'Inter Tight', 'Manrope', 'HK Grotesk Semi Condensed', sans-serif;
+  overflow: hidden;
+}
+
+/* Floating Control Panel (Configurator style) */
+.control-panel {
+  position: absolute;
+  top: 80px; /* spacing.section */
+  left: 24px;
+  z-index: 10;
+  background-color: #111111; /* surface-deep */
+  border: 1px solid rgba(255, 255, 255, 0.16); /* divider-dark */
+  border-radius: 0px; /* rounded.none */
+  padding: 32px; /* spacing.xxl */
+  width: 340px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel-title {
+  font-size: 24px; /* typography.heading-lg */
+  font-weight: 700;
+  line-height: 0.95;
+  color: #ffffff;
+  margin: 0;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-label {
+  font-size: 10px; /* typography.overline */
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffed00; /* primary */
+  text-transform: uppercase;
+}
+
+.path-input {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px; /* typography.body-md */
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0px;
+  padding: 8px 0;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.path-input:focus {
+  border-bottom-color: #ffed00; /* primary */
+}
+
+/* button-primary */
+.btn-traverse {
+  background-color: #ffed00; /* primary */
+  color: #000000; /* on-primary */
+  font-family: inherit;
+  font-size: 14.4px; /* typography.button-md */
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: 0.144px;
+  border-radius: 2px; /* rounded.xs */
+  padding: 14px 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  margin-top: 8px;
+}
+
+.btn-traverse:hover,
+.btn-traverse:active {
+  background-color: #e6d200; /* primary-deep */
+}
+
+.btn-traverse:disabled {
+  background-color: #333333; /* charcoal */
+  color: #8a8a8a; /* ash */
+  cursor: not-allowed;
+}
+
+.status-message {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffed00;
+  margin: 0;
+}
+
+.error-message {
+  font-size: 14px;
+  font-weight: 600;
+  color: #be6464; /* error */
+  margin: 0;
+}
+
+/* React Flow Overrides for Dark Mode */
+.react-flow__node {
+  border-radius: 0px !important; /* Force square geometry */
+}
+
+.react-flow__controls button {
+  background-color: #111111 !important;
+  fill: #ffffff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 0 !important;
+}
+
+.react-flow__controls button:hover {
+  background-color: #222222 !important;
+  fill: #ffed00 !important;
+}
+
+@media (max-width: 767px) {
+  .control-panel {
+    top: auto;
+    bottom: 24px;
+    left: 16px;
+    right: 16px;
+    width: auto;
+    padding: 24px;
+  }
+}

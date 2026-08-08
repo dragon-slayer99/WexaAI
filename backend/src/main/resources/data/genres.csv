@@ -1,0 +1,101 @@
+genreId,name
+G1,Rock
+G2,Pop
+G3,Hip Hop
+G4,Jazz
+G5,Blues
+G6,Electronic
+G7,Classical
+G8,Country
+G9,R&B
+G10,Reggae
+G11,Metal
+G12,Folk
+G13,Indie
+G14,Punk
+G15,Soul
+G16,Funk
+G17,Disco
+G18,Techno
+G19,House
+G20,Trance
+G21,Dubstep
+G22,Ambient
+G23,Ska
+G24,Grunge
+G25,Emo
+G26,Nu Metal
+G27,Synthpop
+G28,K-Pop
+G29,Lo-Fi
+G30,Shoegaze
+G31,Afrobeats
+G32,Bossa Nova
+G33,Post Rock
+G34,Post Classical
+G35,Dark Indie
+G36,Neo K-Pop
+G37,Post Shoegaze
+G38,Dark Rock
+G39,Post Hip Hop
+G40,Post Folk
+G41,Dark Disco
+G42,Alt Hip Hop
+G43,Post K-Pop
+G44,Post Punk
+G45,Alt Disco
+G46,Post Afrobeats
+G47,Alt Grunge
+G48,Dark Folk
+G49,Post Ambient
+G50,Post Bossa Nova
+G51,Post Shoegaze
+G52,Post K-Pop
+G53,Alt Blues
+G54,Alt Emo
+G55,Neo Folk
+G56,Neo Afrobeats
+G57,Dark Blues
+G58,Neo Shoegaze
+G59,Post Afrobeats
+G60,Dark Dubstep
+G61,Neo Funk
+G62,Dark Jazz
+G63,Neo Pop
+G64,Post House
+G65,Post Disco
+G66,Neo Trance
+G67,Dark Punk
+G68,Post Soul
+G69,Neo Ska
+G70,Dark Jazz
+G71,Neo Ska
+G72,Dark Metal
+G73,Post Folk
+G74,Dark Techno
+G75,Post Soul
+G76,Post House
+G77,Neo Hip Hop
+G78,Alt Emo
+G79,Dark Metal
+G80,Post Disco
+G81,Dark Soul
+G82,Alt Emo
+G83,Neo Lo-Fi
+G84,Alt Country
+G85,Alt Blues
+G86,Alt Synthpop
+G87,Alt Trance
+G88,Neo Emo
+G89,Neo Bossa Nova
+G90,Neo Classical
+G91,Dark Country
+G92,Dark Emo
+G93,Post Nu Metal
+G94,Alt Jazz
+G95,Neo Synthpop
+G96,Neo Ska
+G97,Alt Trance
+G98,Dark Blues
+G99,Neo Nu Metal
+G100,Alt Reggae

@@ -1,0 +1,365 @@
+/* PlaylistDetails.css */
+
+.playlist-page {
+    background-color: #000000;
+    /* surface-dark */
+    color: #ffffff;
+    /* on-dark */
+    min-height: 100vh;
+    padding: 80px 24px;
+    /* spacing.section */
+    font-family: 'NouvelR', 'Inter Tight', 'Manrope', 'HK Grotesk Semi Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+.playlist-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.overline {
+    font-size: 10px;
+    /* typography.overline */
+    font-weight: 700;
+    line-height: 1.45;
+    color: #ffed00;
+    /* primary */
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.playlist-title {
+    font-size: 56px;
+    /* typography.display-xl */
+    font-weight: 700;
+    line-height: 0.95;
+    margin: 0 0 16px 0;
+    color: #ffffff;
+}
+
+.playlist-subtitle {
+    font-size: 19.2px;
+    /* typography.subtitle */
+    font-weight: 600;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.72);
+    /* on-dark-mute */
+    margin: 0 0 64px 0;
+}
+
+.section-header {
+    font-size: 32px;
+    /* typography.display-md */
+    font-weight: 700;
+    line-height: 0.95;
+    color: #ffffff;
+    margin: 0 0 32px 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    /* divider-dark */
+}
+
+/* Recommendations Grid */
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.playlist-card {
+    background-color: #111111;
+    /* surface-deep */
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    /* divider-dark */
+    border-radius: 0px;
+    /* rounded.none */
+    padding: 32px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    position: relative;
+}
+
+.playlist-card:hover {
+    border-color: #ffed00;
+    /* primary */
+    background-color: #222222;
+}
+
+.playlist-name {
+    font-size: 24px;
+    /* typography.heading-lg */
+    font-weight: 700;
+    line-height: 0.95;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    padding-right: 40px;
+    /* Space for the badge */
+}
+
+.playlist-mood {
+    font-size: 14px;
+    /* typography.body-sm */
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* badge-new style for overlap count */
+.overlap-badge {
+    position: relative;
+    top: -18px;
+    background-color: #ffed00;
+    /* primary */
+    color: #000000;
+    /* on-primary */
+    font-size: 14.4px;
+    /* typography.button-md */
+    font-weight: 700;
+    border-radius: 9999px;
+    /* rounded.full */
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-text,
+.error-text {
+    font-size: 19.2px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.error-text {
+    color: #be6464;
+    /* error */
+}
+
+/* Add to PlaylistDetails.css */
+
+.source-playlist-hero {
+    background-color: #ffed00;
+    /* primary / promo-tile-yellow[cite: 4] */
+    color: #000000;
+    /* on-primary[cite: 4] */
+    padding: 32px;
+    /* spacing.xxl[cite: 4] */
+    border-radius: 0px;
+    /* rounded.none[cite: 4] */
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.source-label {
+    font-size: 10px;
+    /* typography.overline[cite: 4] */
+    font-weight: 700;
+    line-height: 1.45;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.source-title {
+    font-size: 40px;
+    /* typography.display-lg[cite: 4] */
+    font-weight: 700;
+    line-height: 0.95;
+    margin: 0;
+    color: #000000;
+}
+
+.source-meta {
+    font-size: 16px;
+    /* typography.body-md[cite: 4] */
+    font-weight: 400;
+    color: #222222;
+    /* body[cite: 4] */
+    margin: 0;
+}
+
+/* Add these styles to the bottom of PlaylistDetails.css */
+
+/* Search Form Layout */
+.search-form {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* text-input token mapped to dark mode[cite: 7] */
+.search-input {
+    background-color: transparent;
+    color: #ffffff; /* on-dark[cite: 7] */
+    font-family: inherit;
+    font-size: 16px; /* typography.body-md[cite: 7] */
+    border: none;
+    border-bottom: 2px solid #ffffff; /* hairline-strong inversion[cite: 7] */
+    padding: 12px 16px; /*[cite: 7] */
+    height: 48px; /*[cite: 7] */
+    outline: none;
+    flex: 1;
+    border-radius: 0px; /* rounded.none[cite: 7] */
+    transition: border-color 0.2s ease;
+}
+
+.search-input::placeholder {
+    color: #8a8a8a; /* ash[cite: 7] */
+}
+
+.search-input:focus {
+    border-bottom-color: #ffed00; /* primary[cite: 7] */
+}
+
+/* button-primary token[cite: 7] */
+.btn-search {
+    background-color: #ffed00; /* primary[cite: 7] */
+    color: #000000; /* on-primary[cite: 7] */
+    font-family: inherit;
+    font-size: 14.4px; /* typography.button-md[cite: 7] */
+    font-weight: 700;
+    line-height: 1.0; /*[cite: 7] */
+    letter-spacing: 0.144px; /*[cite: 7] */
+    border-radius: 2px; /* rounded.xs[cite: 7] */
+    padding: 14px 24px; /*[cite: 7] */
+    height: 48px; /*[cite: 7] */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.btn-search:hover,
+.btn-search:active {
+    background-color: #e6d200; /* primary-deep[cite: 7] */
+}
+
+/* Search Form Layout */
+.search-form {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* text-input token mapped to dark mode[cite: 7] */
+.search-input {
+    background-color: transparent;
+    color: #ffffff; /* on-dark[cite: 7] */
+    font-family: inherit;
+    font-size: 16px; /* typography.body-md[cite: 7] */
+    border: none;
+    border-bottom: 2px solid #ffffff; /* hairline-strong inversion[cite: 7] */
+    padding: 12px 16px; /*[cite: 7] */
+    height: 48px; /*[cite: 7] */
+    outline: none;
+    flex: 1;
+    border-radius: 0px; /* rounded.none[cite: 7] */
+    transition: border-color 0.2s ease;
+}
+
+.search-input::placeholder {
+    color: #8a8a8a; /* ash[cite: 7] */
+}
+
+.search-input:focus {
+    border-bottom-color: #ffed00; /* primary[cite: 7] */
+}
+
+/* button-primary token[cite: 7] */
+.btn-search {
+    background-color: #ffed00; /* primary[cite: 7] */
+    color: #000000; /* on-primary[cite: 7] */
+    font-family: inherit;
+    font-size: 14.4px; /* typography.button-md[cite: 7] */
+    font-weight: 700;
+    line-height: 1.0; /*[cite: 7] */
+    letter-spacing: 0.144px; /*[cite: 7] */
+    border-radius: 2px; /* rounded.xs[cite: 7] */
+    padding: 14px 24px; /*[cite: 7] */
+    height: 48px; /*[cite: 7] */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.btn-search:hover,
+.btn-search:active {
+    background-color: #e6d200; /* primary-deep[cite: 7] */
+}
+
+/* Song List Layout */
+.song-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 64px;
+}
+
+/* configurator-row[cite: 7] */
+.song-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0; /*[cite: 7] */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16); /* divider-dark[cite: 7] */
+    font-size: 16px; /* typography.body-md[cite: 7] */
+    font-weight: 400;
+    color: #ffffff;
+    transition: padding-left 0.2s ease, color 0.2s ease;
+}
+
+.song-row:hover {
+    padding-left: 8px;
+    color: #ffed00; /* primary[cite: 7] */
+}
+
+@media (max-width: 767px) {
+    .search-form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    .search-form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1023px) {
+    .playlist-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .playlist-page {
+        padding: 40px 16px;
+    }
+
+    .playlist-title {
+        font-size: 40px;
+    }
+
+    .playlist-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .overlap-badge {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: fit-content;
+        margin-bottom: 16px;
+    }
+}

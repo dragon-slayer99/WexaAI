@@ -1,0 +1,92 @@
+/* Header.css */
+
+/* nav-bar container structure adapted for dark mode[cite: 8] */
+.nav-bar {
+    background-color: #000000; /* surface-dark[cite: 8] */
+    height: 60px; /* nav-bar height[cite: 8] */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16); /* divider-dark[cite: 8] */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    font-family: 'NouvelR', 'Inter Tight', 'Manrope', 'HK Grotesk Semi Condensed', sans-serif; /* typography family[cite: 8] */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo anchoring the left side[cite: 8] */
+.nav-logo {
+    font-size: 16px; /* typography.button-lg[cite: 8] */
+    font-weight: 700; /*[cite: 8] */
+    line-height: 1.0; /*[cite: 8] */
+    color: #ffed00; /* primary[cite: 8] */
+    text-decoration: none;
+    letter-spacing: 0; /*[cite: 8] */
+    display: flex;
+    align-items: center;
+}
+
+/* Center navigation links[cite: 8] */
+.nav-center {
+    display: flex;
+    gap: 32px; /* spacing.xxl[cite: 8] */
+    align-items: center;
+}
+
+/* typography.button-md applied to links[cite: 8] */
+.nav-link {
+    font-size: 14.4px; /*[cite: 8] */
+    font-weight: 700; /*[cite: 8] */
+    line-height: 1.0; /*[cite: 8] */
+    letter-spacing: 0.144px; /* mechanical precision tracking[cite: 8] */
+    color: #ffffff; /* on-dark[cite: 8] */
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.15s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffed00; /* primary hover state[cite: 8] */
+}
+
+/* Mobile Hamburger Menu Button */
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #ffffff; /* on-dark[cite: 8] */
+    cursor: pointer;
+    padding: 8px; /* spacing.xs[cite: 8] */
+}
+
+/* Mobile Dropdown Menu */
+.mobile-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px; /* below nav-bar[cite: 8] */
+    left: 0;
+    right: 0;
+    background-color: #000000; /* surface-dark[cite: 8] */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16); /* divider-dark[cite: 8] */
+    padding: 24px; /* spacing.xl[cite: 8] */
+    flex-direction: column;
+    gap: 24px; /* spacing.xl[cite: 8] */
+    font-family: 'NouvelR', 'Inter Tight', 'Manrope', 'HK Grotesk Semi Condensed', sans-serif;
+}
+
+.mobile-dropdown.open {
+    display: flex;
+}
+
+/* Responsive Collapsing Strategy[cite: 8] */
+@media (max-width: 1023px) {
+    .nav-center {
+        display: none; /* Collapse centre nav to hamburger[cite: 8] */
+    }
+    
+    .mobile-menu-btn {
+        display: block; /* Show hamburger icon[cite: 8] */
+    }
+}
