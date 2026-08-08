@@ -46,7 +46,7 @@ public class ArtistService {
     public List<List<String>> getShortestPathBetweenSongs(String sourceSong, String targetSong) {
 
         String query = """
-                MATCH p = shortestPath((s1:Song)-[*..10]-(s2:Song))
+                MATCH p = shortestPath((s1:Song)-[*..5]-(s2:Song))
                 WHERE s1.title = $source AND s2.title = $target
                 RETURN [node in nodes(p) | labels(node)[0] + ': ' + coalesce(node.title, node.name)] AS path
                 """;
