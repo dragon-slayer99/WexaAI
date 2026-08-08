@@ -51,7 +51,7 @@ function Home() {
             <button
               type="button"
               className="btn-primary"
-              onClick={() => handleQuickAction('/path?source=Infinite Soul&target=Loud Lights')}
+              onClick={() => handleQuickAction('/path?source=Loud Lights&target=Silent Night')}
             >
               Find path between Soul and Lights
             </button>
